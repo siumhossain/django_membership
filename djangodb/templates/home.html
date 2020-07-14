@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="/join" class="btn btn-outline-info" role="button" aria-pressed="true">join</a><br><br>
+	{% for id in all%}
+		{{ id.f_name }} {{ id.l_name}}<br>
+		email : {{ id.email}}<br>
+		age : {{ id.age }}
+		<hr>
+	{% endfor %}
+{% endblock %}
